@@ -1,9 +1,12 @@
 # TaskFlow API
 
+> Freelancers and teams waste time juggling tasks across sticky notes, spreadsheets, and emails — things fall through the cracks and deadlines are missed. TaskFlow centralizes everything in one place with a clean REST API and a visual Kanban frontend.
+
 A task management REST API built with **Django REST Framework**. Supports JWT authentication, project organization, task CRUD with filtering, pagination, and full Swagger documentation.
 
 **Live API:** `https://taskflow-api-production-0a90.up.railway.app`  
-**Swagger Docs:** `https://taskflow-api-production-0a90.up.railway.app/api/docs/`
+**Swagger Docs:** `https://taskflow-api-production-0a90.up.railway.app/api/docs/`  
+**Frontend:** `https://taskflow-client-cyan.vercel.app`
 
 ---
 
@@ -77,7 +80,7 @@ DELETE /api/tasks/{id}/       — Delete task
 ## Quick Start
 
 ```bash
-git clone https://github.com/yourusername/taskflow-api
+git clone https://github.com/julesclaurece/TaskFlow-API
 cd taskflow-api
 
 python -m venv venv
