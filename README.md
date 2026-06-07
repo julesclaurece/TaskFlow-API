@@ -2,8 +2,8 @@
 
 A task management REST API built with **Django REST Framework**. Supports JWT authentication, project organization, task CRUD with filtering, pagination, and full Swagger documentation.
 
-**Live API:** `https://taskflow-api.up.railway.app`  
-**Swagger Docs:** `https://taskflow-api.up.railway.app/api/docs/`
+**Live API:** `https://taskflow-api-production-0a90.up.railway.app`  
+**Swagger Docs:** `https://taskflow-api-production-0a90.up.railway.app/api/docs/`
 
 ---
 
@@ -110,14 +110,14 @@ Open `http://localhost:8000/api/docs/` to explore the API interactively.
 
 **Register and get tokens:**
 ```bash
-curl -X POST https://taskflow-api.up.railway.app/api/auth/register/ \
+curl -X POST https://taskflow-api-production-0a90.up.railway.app/api/auth/register/ \
   -H "Content-Type: application/json" \
   -d '{"username":"john","email":"john@example.com","password":"Secure123!"}'
 ```
 
 **Create a task:**
 ```bash
-curl -X POST https://taskflow-api.up.railway.app/api/tasks/ \
+curl -X POST https://taskflow-api-production-0a90.up.railway.app/api/tasks/ \
   -H "Authorization: Bearer <your_access_token>" \
   -H "Content-Type: application/json" \
   -d '{"title":"Build landing page","priority":"high","status":"todo","due_date":"2024-02-01"}'
@@ -125,6 +125,6 @@ curl -X POST https://taskflow-api.up.railway.app/api/tasks/ \
 
 **Filter tasks:**
 ```bash
-curl "https://taskflow-api.up.railway.app/api/tasks/?status=in_progress&priority=high&ordering=-due_date" \
+curl "https://taskflow-api-production-0a90.up.railway.app/api/tasks/?status=in_progress&priority=high&ordering=-due_date" \
   -H "Authorization: Bearer <your_access_token>"
 ```
